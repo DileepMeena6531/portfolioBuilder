@@ -24,4 +24,4 @@ Portfolio Manager is a web application designed to showcase user portfolios. It 
 ### **Backend Setup**
 1. Clone the repository:
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/DileepMeena6531/portfolioBuilder.git
