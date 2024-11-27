@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './portfolio.css';
 
 function Portfolio() {
   const [portfolio, setPortfolio] = useState([]); 
@@ -33,7 +34,7 @@ function Portfolio() {
   }
 
   return (
-    <div>
+    <div className='portfolio-container'>
       <h1>Portfolio</h1>
       <ul>
         {portfolio.map((item) => (

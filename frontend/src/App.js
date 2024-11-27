@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import Signup from './components/Signup';
 import Login from './components/login';
+import "./App.css"
 
 function App() {
   const [user, setUser] = useState(null);
@@ -26,17 +27,15 @@ function App() {
           <ul>
             {!user ? (
               <>
-                <li>
-                  <Link to="/login">Login</Link>
-                </li>
-                <li>
-                  <Link to="/signup">Signup</Link>
-                </li>
+              
+                  <Link type="button" className="mt-2 btn btn-outline-success" to="/login">Login</Link>
+                  <Link type="button" className="ms-2 mt-2 btn btn-outline-success" to="/signup">Signup</Link>
+             
               </>
             ) : (
-              <li>
-                <button onClick={handleLogout}>Logout</button>
-              </li>
+              
+                <button type="button" className="mt-2 btn btn-outline-danger" onClick={handleLogout}>Logout</button>
+            
             )}
           </ul>
         </nav>

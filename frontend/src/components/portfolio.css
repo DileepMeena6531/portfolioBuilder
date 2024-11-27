@@ -1,0 +1,130 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Portfolio container */
+  .portfolio-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Portfolio title */
+  .portfolio-container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* List styling */
+  .portfolio-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .portfolio-container li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .portfolio-container li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Section headers */
+  .portfolio-container h2 {
+    color: #34495e;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-container h3 {
+    color: #1abc9c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Skill list */
+  .portfolio-container .skills-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .portfolio-container .skills-list li {
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+  }
+  
+  /* Project list */
+  .portfolio-container .projects-list ul {
+    margin: 10px 0;
+  }
+  
+  .portfolio-container .projects-list li {
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-container .projects-list h4 {
+    font-size: 1.2em;
+    color: #e74c3c;
+  }
+  
+  .portfolio-container .projects-list a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .portfolio-container .projects-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Certifications list */
+  .portfolio-container .certifications-list ul {
+    margin: 10px 0;
+  }
+  
+  .portfolio-container .certifications-list a {
+    color: #2ecc71;
+    text-decoration: none;
+  }
+  
+  .portfolio-container .certifications-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Fallback message styling */
+  .portfolio-container p {
+    margin: 5px 0;
+    color: #7f8c8d;
+  }
+  
+  .portfolio-container p strong {
+    color: #34495e;
+  }
+  
+  /* Empty message styling */
+  .portfolio-container .empty-message {
+    color: #c0392b;
+    font-style: italic;
+  }
+  

@@ -9,7 +9,7 @@ function Login({ setUser }) {
     const navigate = useNavigate();
 
     const handleLogin = async (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
         try {
             const response = await axios.post('/api/users/login', { email, password });
             localStorage.setItem('token', response.data.token);
@@ -23,26 +23,18 @@ function Login({ setUser }) {
     };
 
     return (
-        <div>
+        <div className='col-6 offset-3'>
             <h1>Login</h1>
             <form onSubmit={handleLogin}>
-                <input
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email"
-                    required
-                />
-                <input
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Password"
-                    required
-                />
-                <button type="submit">Login</button>
+                <div className="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" value={email} id="email" placeholder='example@gmail.com' onChange={(e) => setEmail(e.target.value)} aria-describedby="emailHelp"/>
+                </div>
+                <div className="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder='password' onChange={(e) => setPassword(e.target.value)} value={password} id="password"/>
+                </div>
+                <button type="submit" class="btn btn-primary">LogIn</button>
             </form>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             <p>
