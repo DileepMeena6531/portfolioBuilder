@@ -15,7 +15,7 @@ function Portfolio() {
     } else {
       const fetchPortfolio = async () => {
         try {
-          const response = await axios.get('http://localhost:8080/api/portfolios', {
+          const response = await axios.get('api/portfolios', {
             headers: { Authorization: `Bearer ${token}` },
           });
           console.log("Fetched portfolio data:", response.data);

@@ -12,7 +12,7 @@ const portfolioSchema = new mongoose.Schema({
     description: String,
     template: {
         type: String,
-        required: true
+        required: true 
     },
     projects: [
         {

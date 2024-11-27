@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const router = express.Router();
 
+
 router.post('/signup', async (req, res) => {
   const { name, email, password } = req.body;
   try {
@@ -32,6 +33,26 @@ router.post('/login', async (req, res) => {
     res.json({ token });
   } catch (err) {
     res.status(500).json({ message: err.message });
+  }
+});
+
+
+router.get('/:id', async (req, res) => {
+  const userId = req.params.id; 
+
+  try {
+    const user = await User.findById(userId); 
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' }); 
+    }
+
+    res.json({
+      name: user.name,
+      email: user.email,
+      createdAt: user.createdAt
+    });
+  } catch (err) {
+    res.status(500).json({ message: 'Error retrieving user data' }); 
   }
 });
 

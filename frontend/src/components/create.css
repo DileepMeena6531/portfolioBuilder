@@ -1,0 +1,113 @@
+/* Container for the form */
+.create-portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .create-portfolio-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .create-portfolio-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-portfolio-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .create-portfolio-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .create-portfolio-container input,
+  .create-portfolio-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .create-portfolio-container input[type="text"],
+  .create-portfolio-container input[type="url"],
+  .create-portfolio-container input[type="email"] {
+    height: 40px;
+  }
+  
+  .create-portfolio-container textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .create-portfolio-container button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .create-portfolio-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .create-portfolio-container button[type="button"] {
+    background-color: #28a745;
+  }
+  
+  .create-portfolio-container button[type="button"]:hover {
+    background-color: #218838;
+  }
+  
+  .create-portfolio-container h3 {
+    margin-top: 30px;
+    color: #444;
+    font-size: 18px;
+  }
+  
+  .create-portfolio-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #ff0000; 
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .create-portfolio-container {
+      padding: 15px;
+    }
+  
+    .create-portfolio-container h1 {
+      font-size: 24px;
+    }
+  
+    .create-portfolio-container form div {
+      margin-bottom: 12px;
+    }
+  
+    .create-portfolio-container input,
+    .create-portfolio-container textarea {
+      font-size: 14px;
+    }
+  
+    .create-portfolio-container button {
+      font-size: 14px;
+    }
+  }
+  
